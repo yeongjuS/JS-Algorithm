@@ -1,1 +1,2 @@
-# JS Algorithm
+# JS-Algorithm
+JS Algorithm problem solving
