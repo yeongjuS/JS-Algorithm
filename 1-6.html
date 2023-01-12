@@ -11,6 +11,7 @@
           min = Number.MAX_SAFE_INTEGER;
         for (let x of arr) {
           if (x % 2 === 1) {
+            // % 연산자 : 왼쪽 피연산자의 값을 오른쪽 피연산자의 값으로 나눈 후, 그 나머지를 반환함
             sum += x;
             if (x < min) {
               min = x;
@@ -18,7 +19,7 @@
           }
         }
 
-        answer.push(sum); // push 메서드 :배열의 마지막에 새로운 요소를 추가한 후, 변경된 배열의 길이를 반환
+        answer.push(sum); // push 메서드 : 배열의 마지막에 새로운 요소를 추가한 후, 변경된 배열의 길이를 반환
         answer.push(min);
         return answer;
       }
