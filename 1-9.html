@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(s) {
+        let answer = "";
+        for (let x of s) {
+          if (x === "A") {
+            answer += "#"; // 문자열은 +하면 옆에 추가됨
+          } else answer += x;
+        }
+        return answer;
+      }
+
+      let str = "BANANA";
+      console.log(solution(str));
+    </script>
+  </body>
+</html>
+
+<!-- <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(s) {
+        let answer = s; // 문자열은 주소 참조(배열처럼)가 아니라 값이 복사됨 (얕은 복사X)
+        answer = answer.replace(/A/g, "#"); // 전체 문자를 모두 바꾸고 싶다면 바꾸고 싶은 문자 뒤에 g를 붙여 전역으로 바꿔주기
+        return answer;
+      }
+
+      let str = "BANANA";
+      console.log(solution(str));
+    </script>
+  </body>
+</html> -->
