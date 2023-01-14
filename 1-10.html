@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(s, t) {
+        let answer = 0;
+        for (let x of s) {
+          if (x === t) answer++;
+        }
+        return answer;
+      }
+
+      let str = "COMPUTERPROGRAMMING";
+      console.log(solution(str, "R"));
+    </script>
+  </body>
+</html>
+
+<!-- <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(s, t) {
+        let answer = s.split(t).length; // 내장함수 split() -> t라는 문자를 구분자로 문자 배열화
+        return answer - 1; // 만약 COMPUTERPROGRAMMINGR처럼 구분자가 끝에 붙어있어도 맨 끝에 빈 문자열이 생기기 때문에 전체 길이에서 1을 빼줘야함
+      }
+
+      let str = "COMPUTERPROGRAMMING";
+      console.log(solution(str, "R"));
+    </script>
+  </body>
+</html> -->
