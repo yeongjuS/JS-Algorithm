@@ -7,9 +7,11 @@
     <script>
       function solution(s) {
         let answer;
-        let mid = Math.floor(s.length / 2);
+        let mid = Math.floor(s.length / 2); // Math.floor() : 소수점 이하를 버림한다.
         if (s.length % 2 === 1) answer = s.substring(mid, mid + 1);
+        // substring()함수 : 특정 문자열을 잘라내어 반환 -> 매개변수로 잘라내고 싶은 문자열의 start index와 last index를 전달한다. (last index 전까지 잘라냄)
         else answer = s.substring(mid - 1, mid + 1);
+        // substr()함수 : 특정 문자열을 잘라내어 반환 -> 매개변수로 잘라내고 싶은 문자열의 start index와 잘라낼 길이 length를 전달한다.
         //if(s.length%2===1) answer=s.substr(mid, 1);
         //else answer=s.substr(mid-1, 2);
         return answer;
